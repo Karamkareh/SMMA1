@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة LTV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>حاسبة LTV</h1>
+        <label for="avgPurchaseValue">متوسط قيمة الشراء:</label>
+        <input type="number" id="avgPurchaseValue" placeholder="أدخل قيمة الشراء">
+        
+        <label for="costOfGoods">تكلفة السلع/الخدمات المباعة:</label>
+        <input type="number" id="costOfGoods" placeholder="أدخل تكلفة السلع/الخدمات">
+        
+        <label for="annualPurchases">عدد المشتريات السنوية:</label>
+        <input type="number" id="annualPurchases" placeholder="أدخل عدد المشتريات السنوية">
+        
+        <label for="customerLifespan">مدة العميل بالسنوات:</label>
+        <input type="number" id="customerLifespan" placeholder="أدخل مدة العميل بالسنوات">
+        
+        <button onclick="calculateCLV()">احسب القيمة الدائمة للعميل</button>
+        
+        <h2>القيمة الدائمة للعميل: <span id="clvResult">0</span> دولار</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
